@@ -19,6 +19,7 @@
   --color-grey-6:#12181b;
   --br-sm-2:14px;
   --main-transition: all .4s ease-in-out;
+  --box-shadow-1:0 3px 15px rgba(0,0,0,.3);
 }
 
 body {
@@ -80,4 +81,29 @@ section {
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+}
+
+.controls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+.controls .control {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--color-grey-4);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7em 0;
+  box-shadow: var(--box-shadow-1);
 }/*# sourceMappingURL=styles.css.map */
